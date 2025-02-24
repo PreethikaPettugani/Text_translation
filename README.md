@@ -6,16 +6,16 @@ This repository contains a Python script that translates text from English into 
 * LangChain (for prompt templates)
 * python-doten
 # Acknowledgments
-* Hugging Face: For providing state-of-the-art machine translation models.
-* LangChain: For tools that help with prompt management.
+* **Hugging Face**: For providing state-of-the-art machine translation models.
+* **LangChain**: For tools that help with prompt management.
 # Code Overview
-* TranslationChain Class:
+* **TranslationChain** Class:
 Encapsulates the initialization of the MarianMT model and tokenizer. It includes a translate method that takes input text, processes it, and returns the translated text.
-* create_translation_chain Function:
+* **create_translation_chain** Function:
 Determines the correct translation model for the target language by referring to the language_models dictionary.
-* translate_text_to_multiple_languages Function:
+* **translate_text_to_multiple_languages** Function:
 Iterates over a list of target languages, creates a translation chain for each, and returns a dictionary of translations.
-* Prompt Template:
+* **Prompt Template**:
 Although not used directly in the translation process, the script sets up a LangChain PromptTemplate that can be expanded for more advanced prompt management in the future.
 
   
